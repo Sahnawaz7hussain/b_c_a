@@ -97,7 +97,7 @@ io.on("connection", (socket) => {
 
 server.listen(PORT, async () => {
   try {
-    console.log("connecting with db");
+    console.log("connecting with db...");
     await connection;
     console.log("connected with db");
     console.log("listening on port", PORT);
