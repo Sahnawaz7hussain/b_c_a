@@ -22,8 +22,8 @@ const server = require("http").createServer(app);
 const PORT = process.env.PORT || 8080;
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
-    methods: ["GET", "POST"],
+    //   //origin: "*",
+    //   methods: ["GET", "POST"],
   },
 });
 
