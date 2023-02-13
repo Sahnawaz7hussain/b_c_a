@@ -22,7 +22,11 @@ const server = require("http").createServer(app);
 const PORT = process.env.PORT || 8080;
 const io = require("socket.io")(server, {
   cors: {
-    origin: ["https://chatzapp.vercel.app", "http://localhost:3000"],
+    origin: [
+      "https://chatzapp-sahnawaz7hussain.vercel.app/",
+      "https://chatzapp.vercel.app",
+      "http://localhost:3000",
+    ],
     methods: ["GET", "POST"],
   },
 });
